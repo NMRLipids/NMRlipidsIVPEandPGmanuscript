@@ -447,7 +447,7 @@ For united atom simulations, we first constructed trajectories including hydroge
 		&  310  & 500 & 100 & \citenum{POPEcharmm} \\
 %   POPE	& CHARMM36 \cite{klauda10}           %& 0.11
 %		& 500       & 25000 & 50  &  310  & 500 & 100 & \cite{POPEcharmm150mMNaCl} \\
-      POPE	& CHARMM36-UA \cite{??}         %&0       
+      POPE	& CHARMM36-UA \cite{lee14}         %&0       
       		& 336	& 15254 %&0    
 		& 310  & 2$\times$200 & 2$\times$100 & \citenum{charmm36uaPOPEfiles}  \\
       \hline
@@ -463,25 +463,25 @@ For united atom simulations, we first constructed trajectories including hydroge
 %      POPE  & Slipids / {\AA}qvist \cite{jambeck12b,aqvist90}  %& 0.11
 %		& 500 & 25000 & 50  &  310  & 500 & 100 & \cite{POPEslipids150mMNaCl} \\
       \hline
-      DPPE	& GROMOS-CKP    \cite{??}      %&0
+      DPPE	& GROMOS-CKP    \cite{piggot11}      %&0
           	& 128	& 3655  %&0    
 		& 342  & 2$\times$500 & 2$\times$400 & \citenum{gromosCKPdppe} \\
 %      POPE  & GROMOS-CKP    \cite{??}      %&0
 %    		& 128	& 3552  &0    & 313  & 2$\times$500 & 2$\times$400 & \cite{gromosCKPpope} \\
-      POPE	& GROMOS-CKP    \cite{??}      %&0
+      POPE	& GROMOS-CKP    \cite{piggot11}      %&0
           	& 500	& 25000 %&0    
 		& 310  & 500 & 100 & \citenum{gromosCKPpopeT310} \\
 %      POPE  & GROMOS-CKP    \cite{??}      &0.11 & 500	& 25000 &50   & 310  & 500 & 100 & \cite{gromosCKPpopeT310150mMNaCl} \\
 %      DOPE  & GROMOS-CKP    \cite{??}      &0    & 128	& 4789  &0    & 271  & 2$\times$500 & 2$\times$400 & \cite{gromosCKPdope} \\
       \hline
-      POPE	& GROMOS 43A1-S3 \cite{??}     %&0
+      POPE	& GROMOS 43A1-S3 \cite{chiu09}     %&0
           	& 128	& 3552     %&0    
 		& 313  & 2$\times$200 & 2$\times$100 & \citenum{gromos43a1s3POPEfiles}  \\
       \hline
-      POPE	& OPLS-UA/HG-H \cite{??}   %&0    
+      POPE	& OPLS-UA/HG-H \cite{Ulmschneider09}   %&0    
       		& 128	& 3328     %&0    
 		& 303  & 2$\times$200 & 2$\times$100 & \citenum{OPLSuaWvdWPOPEfiles} \\
-      POPE	& OPLS-UA \cite{??}            %&0
+      POPE	& OPLS-UA \cite{Ulmschneider09}            %&0
       		& 128	& 3328     %&0    
 		& 303  & 2$\times$200 & 2$\times$100 & \citenum{OPLSuaPOPEfiles} \\
       \hline
@@ -490,10 +490,10 @@ For united atom simulations, we first constructed trajectories including hydroge
 		& 310  & 500 & 350 & \citenum{MacRogPOPEfiles} \\
 %   POPE	& OPLS-MacRog \cite{rog16}     &0    & 128	& 5120     &0    & 300  & 500 & 300 & \cite{MacRogPOPEfilesT300K} \\
       \hline
-      POPE	& Berger-POPE-2004 \cite{??}       %&0    
+      POPE	& Berger-POPE-2004 \cite{devries04}       %&0    
       		& 128	& 3552  %&0    
 		& 303  & 2$\times$200 & 2$\times$100 & \citenum{bergerPOPEfiles}  \\
-      POPE	& Berger-POPE-2018 \cite{??}      %&0    
+      POPE	& Berger-POPE-2018 \cite{devries04}      %&0    
       		& 128	& 3552  %&0    
 		& 303  & 2$\times$200 & 2$\times$100 & \citenum{berger2POPEfiles}  \\
 %   DOPE  & Berger-POPE-2004 \cite{??}       &0    & 128	& 4789  &0    & 271  & 2$\times$200 & 2$\times$100 & \cite{bergerDOPEfiles}  \\
@@ -506,12 +506,7 @@ For united atom simulations, we first constructed trajectories including hydroge
     \end{tabular}
     }
   \end{minipage}
-  \todo{Citation for CHARMM36ua?} \\
   %\todo{Which ion model is used in \cite{POPEcharmm150mMNaCl}?} \\
-  \todo{Citation for GROMOS-CKP?} \\
-  \todo{Citation for GROMOS 43A1-S3?} \\
-  \todo{Citation for OPLS-UA models?} \\
-  \todo{Citations for Berger-* simulations?} \\
 \end{table*}
 %  \end{sidewaystable*} 
 
@@ -543,12 +538,11 @@ For united atom simulations, we first constructed trajectories including hydroge
       POPG             & LIPID17 / Dang \cite{gould18,smith94,dang06}     & 500 & 25000  &  310  & 500 & 100 & \citenum{POPGlipid17} \\
 %      POPG             & LIPID17 \cite{gould18}         & 0.11           & 500 & 25000 & 49  &  310  & 500 & 100 & \cite{POPGlipid17150mMNaCl} \\
       \hline
-      POPG             & GROMOS-CKP \cite{??}         & 500 & 25000 &  310  & 500 & 100 & \citenum{POPGgromosCKP} \\
+      POPG             & GROMOS-CKP \cite{piggot11}         & 500 & 25000 &  310  & 500 & 100 & \citenum{POPGgromosCKP} \\
 %      POPG             & GROMOS-CKP \cite{??}         & 0.11           & 500 & 25000 & 49 &  310  & 500 & 100 & \cite{POPGgromosCKP150mMNaCl} \\
     \end{tabular}
     }
   \end{minipage}
-  \todo{Citation for GROMOS-CKP?}
 \end{table*}
 % \end{sidewaystable*}
 
@@ -588,8 +582,8 @@ For united atom simulations, we first constructed trajectories including hydroge
       POPC             & Slipid \cite{jambeck12b}     &0          & 512 & 23943 & 0  &  298  & 170 & 100 & \cite{POPCslipid298K} \\
       POPC:POPE (1:1)  & Slipid \cite{jambeck12b}     &0          & 128 & 5120  & 0  &  298  & 500 & 300 & \cite{POPC1POPE1slipidT298K} \\
      \hline
-      POPC                   & GROMOS-CKP / ?? \cite{??,??}  & 0  & 500     & 25000 & 0   &  310  & 500 & 100 & \cite{POPCgromosCKPT310K}  \\
-      POPC:POPG (7:3)        & GROMOS-CKP / ?? \cite{??,??}  & 0  & 350:150 & 25000 & 0   &  310  & 500 & 100 & \cite{POPC7POPG3gromosCKPT310K} \\
+      POPC                   & GROMOS-CKP / ?? \cite{piggot12,??}  & 0  & 500     & 25000 & 0   &  310  & 500 & 100 & \cite{POPCgromosCKPT310K}  \\
+      POPC:POPG (7:3)        & GROMOS-CKP / ?? \cite{piggot11,piggot12,??}  & 0  & 350:150 & 25000 & 0   &  310  & 500 & 100 & \cite{POPC7POPG3gromosCKPT310K} \\
      \hline
       POPC                   & Slipid \cite{jambeck12b}  & 0      & 500     & 25000 & 0   &  310  & 500 & 100 & \cite{POPCslipid301K}  \\
       POPC:POPG (7:3)        & Slipid / {\AA}qvist \cite{jambeck12b,aqvist90} & 0  & 350:150 & 25000 & 0   &  310  & 500 & 100 & \cite{slipidPOPC70POPG30T310K} \\
@@ -601,7 +595,7 @@ For united atom simulations, we first constructed trajectories including hydroge
     \end{tabular}
     }
   \end{minipage}
-    \todo{Citation and ion model for GROMOS-CKP?} \\
+    \todo{ion model for GROMOS-CKP?} \\ % TJP: Most likely standard GROMOS but not my simulations so I've left the ion reference
 \end{table*}
 %\end{sidewaystable*}
 
@@ -702,16 +696,16 @@ Systems were simulated 200 ns (the first 20 ns was discarded as an equilibration
 using Gromacs 5 \cite{abraham2015gromacs} at the temperature of 313 K.
 All simulation files are available from Refs. \citenum{charmmPOPC313K,CHARMM36cationicSURF}.
 
-\subsection{CHARMM36ua}
+\subsection{CHARMM36-UA}
 
-\noindent {\it POPE} Data is available at \cite{charmm36uaPOPEfiles}. \todo{Simulation details by  T. Piggot.}
+\noindent {\it POPE} Data is available at \cite{charmm36uaPOPEfiles}. CHARMM36-UA POPE simulations were performed for 200 ns using GROMACS version 5.0.6. A topology for POPE was constructed using the standard CHARMM36 all-atom PE head group combined with the original CHARMM36-UA lipid tail parameters \cite{lee14}. Simulations were performed using a hexagonal periodic box containing 336 POPE lipids. This membrane was constructed using a MARTINI force field \cite{marrink07} coarse-grained self-assembly simulation followed by reverse-mapping to an atomic resolution. Simulations were performed using standard CHARMM lipid simulation settings; further details are available at \cite{charmm36uaPOPEfiles}.
 
 %\subsection{MacRog}
 
 %\subsection{Lipid17}
 
 \subsection{Slipids}
-\noindent {\it POPE} Data is available at \cite{slipidsPOPEfiles}. \todo{Simulation details by  T. Piggot.}
+\noindent {\it POPE} Data is available at \cite{slipidsPOPEfiles}. Slipids POPE simulations were performed for 200 ns using GROMACS version 5.0.6. Simulations employed the original Slipids POPE parameters \cite{jambeck12b} and employed the same starting structure as the CHARMM36-UA POPE simulations. Slipids simulations employed standard AMBER force field cut-offs of 1.0 nm, previously validated for use with the Slipids force field \cite{piggot17}. Further simulation details are available at \cite{slipidsPOPEfiles}.
 
 %\noindent {\it POPE with additional NaCl} \todo{Simulation details by A. Peon.
 %  I have assumed that ion parameters are default Slipids, i.e., {\AA}qvist, please correct if this is not true.
@@ -760,7 +754,7 @@ Berger - \{{\it molecule name}\} - \{{\it year when model published first time}\
 %while the molecule specific parameters might somewhat vary. However, the majority of the molecular level topologies are 
 %relying (especially for the glycerol backbone and headgroup) on the parameters originally introduced by Marrink et al.~\cite{marrink98}.
 
-\noindent {\it POPE} Data are available at Ref.~\citenum{bergerPOPEfiles} for Berger-POPE-2004~\cite{??} and at Ref.~\citenum{berger2POPEfiles} for Berger-POPE-2018~\cite{??}. \todo{Simulation details by  T. Piggot.}
+\noindent {\it POPE} Data are available at Ref.~\citenum{bergerPOPEfiles} for Berger-POPE-2004~\cite{devries04} and at Ref.~\citenum{berger2POPEfiles} for Berger-POPE-2018~\cite{berger2POPEfiles}. Simulations of POPE membranes using the Berger force field employed two variants of the Berger force field for PE lipids. The first (Berger-POPE-2004) used the de Vries modifications which includes additional repulsive Lennard-Jones interactions on the ethanolamine hydrogen atoms. The second (Berger-POPE-2018) used this same approach but doubled the repulsive strength employed for the hydrogen atom van der Waals interactions. The latter variant results in more disorder within the membrane and a closer agreement with experimental properties such as the area per lipid of POPE. POPE simulations were performed for 200 ns using GROMACS 5.0.6 and employed a POPE membrane with 64 lipids per leaflet taken from a published GROMOS-CKP POPE membrane \cite{piggot11}. Simulations used a 1.0 nm cut-off for both electrostatic and van der Waals interactions with PME and a dispersion correction doe the energy and pressure employed respectively. Further simulation details can be found at Ref.~\citenum{bergerPOPEfiles} and at Ref.~\citenum{berger2POPEfiles}.
 
 %\noindent {\it DOPE} Data is available at \cite{bergerDOPEfiles,berger2DOPEfiles}. \todo{Simulation details by  T. Piggot.}
 
@@ -772,23 +766,21 @@ Ref.~\citenum{POPCberger300K} (pure POPC) and~\citenum{POPC1POPE1berger} (POPC:P
 
 \subsection{GROMOS 43A1-S3}
 
-\noindent {\it POPE} Data is available at \cite{gromos43a1s3POPEfiles}. \todo{Simulation details by  T. Piggot.}
+\noindent {\it POPE} Data is available at \cite{gromos43a1s3POPEfiles}. GROMOS 43A1-S3 simulations were performed for 200 ns using GROMACS 4.0.7 employing the standard GROMOS 43A1-S3 POPE force field \cite{chiu09}. The simulation structure had 64 lipids per leaflet and was constructed from a GROMOS 43A1-S3 POPC membrane \cite{piggot12}. Simulations employed standard GROMOS 43A1-S3 settings. Further details can be found at Ref.\citenum{gromos43a1s3POPEfiles}.
 
 \subsection{OPLS-UA}
 
-\noindent {\it POPE} Data is available at \cite{OPLSuaPOPEfiles}. \todo{Simulation details by  T. Piggot.}
-%From Zenodo: The PE parameters were constructed by modifying the OPLS-UA POPC of Ulmschneider and Ulmschneider with the standard OPLS lysine parameters.
+\noindent {\it POPE} Data is available at \cite{OPLSuaPOPEfiles}. POPE simulations with the OPLS-UA force field were performed for 200 ns using GROMACS 4.5.7. POPE parameters were constructed by modifying the OPLS-UA POPC of Ulmschneider and Ulmschneider \cite{Ulmschneider09} with standard OPLS lysine parameters. The starting membrane structure, containing 64 POPE lipids per leaflet, was created by modifying an OPLS-UA POPC membrane. Simulations employed a 1.0 nm cut-off with PME and no dispersion correction. Further simulation details can be found at \citenum{OPLSuaPOPEfiles}.
 
-\noindent {\it POPE with vdW interaction in H (OPLS-UA/HG-H)} Data is available at \cite{OPLSuaWvdWPOPEfiles}. \todo{Simulation details by  T. Piggot.}
-%From Zenodo: The PE parameters were constructed by modifying the OPLS-UA POPC of Ulmschneider and Ulmschneider with the standard OPLS lysine parameters and the addition of LJ parameters on the hydrogen atoms in the head group (designed to increase the area per lipid).
+\noindent {\it POPE with vdW interaction in H (OPLS-UA/HG-H)} Data is available at \cite{OPLSuaWvdWPOPEfiles}. In addition to the OPLS simulations mentioned above, further simulations employing the same starting structure and simulation settings were employed using slightly modified parameters. These modified parameters, termed OPLS-UA/HG-H, were designed to increase the area per lipid through employing a small repulsive potential on the ethanolamine hydrogen atoms, as per the approach of de Vries with the Berger POPE parameters \cite{devries04}. Further details of these simulations can be found at Ref.\citenum{OPLSuaWvdWPOPEfiles}.
 
-\subsection{GROMOS-CKP and GROMOS-CKPM}
+\subsection{GROMOS-CKP}
 
 \noindent {\it POPE} Data is available at \cite{gromosCKPpopeT310}. \todo{Simulation details by  A. Peon.}
 
-%\noindent {\it DOPE} Data is available at \cite{gromosCKPdope}. \todo{Simulation details by  T. Piggot.}
+%\noindent {\it DOPE} Data is available at \cite{gromosCKPdope}. 
 
-\noindent {\it DPPE} Data is available at \cite{gromosCKPdppe}. \todo{Simulation details by  T. Piggot.}
+\noindent {\it DPPE} Data is available at \cite{gromosCKPdppe}. GROMOS-CKP DPPE simulations were performed for 500 ns using GROMACS 5.0.6. These simulations used the original GROMOS-CKP parameters \cite{piggot11} but with the charges in the ethanolamine head group taken from a GROMOS 53A6 lysine side-chain rather than a PC lipid head group, as done in the original parameters. The starting structure contained 64 lipids per leaflet and was taken from a previous GROMOS-CKP simulation \cite{piggot11}. Simulations employed standard GROMOS-CKP settings with PME employed for the long-range electrostatic interactions. Further details can be found at Ref.\citenum{gromosCKPdppe}.
 
 \noindent {\it POPG} \todo{Simulation details by A. Peon.}
 
@@ -798,7 +790,7 @@ Ref.~\citenum{POPCberger300K} (pure POPC) and~\citenum{POPC1POPE1berger} (POPC:P
 
 \noindent {\it POPE} A bilayer patch with a total of 144 POPE molecules, distributed evenly between two leaflets, was created by reordering atoms in a final structure of a POPE simulation performed using the CHARMM36 force field. The bilayer was hydrated by 40 water molecules per lipid for a total of 5760 water molecules. The OPLS-based MacRog force field was used \cite{Kulig15b} for lipids and the TIP3P model \cite{jorgensen83} for water. 
 
-Buffered Verlet lists \cite{Pall13} were used to keep track of neighbours. The Lennard-Jones potential was cut off at 1.0~nm, and dispersion corrections were applied to energy and pressure \cite{shirts07}. Smooth PME algorithm was used to calculate long-range electrostatics \cite{darden93,essman95}. The Nos\'{e}--Hoover thermostat was used to keep the temperatures of the lipids and water at 310~K. These groups were coupled separately, and a time constat of 0.4~ps was used. The Parrinello--Rahman barostat~\cite{parrinello81} was used to keep the pressures in the membrane plane as well as normal to it constant at 1~bar. For the barostat, a time constant of 10~ps was used, and the membrane compressibility was set to 4.5$\times$10$^{-5}$~1/bar. All bonds were constrained using p-LINCS \cite{hess97,hess07}.
+Buffered Verlet lists \cite{Pall13} were used to keep track of neighbours. The Lennard-Jones potential was cut off at 1.0~nm, and dispersion corrections were applied to energy and pressure \cite{shirts07}. Smooth PME algorithm was used to calculate long-range electrostatics \cite{darden93,essman95}. The Nos\'{e}--Hoover thermostat was used to keep the temperatures of the lipids and water at 310~K. These groups were coupled separately, and a time constant of 0.4~ps was used. The Parrinello--Rahman barostat~\cite{parrinello81} was used to keep the pressures in the membrane plane as well as normal to it constant at 1~bar. For the barostat, a time constant of 10~ps was used, and the membrane compressibility was set to 4.5$\times$10$^{-5}$~1/bar. All bonds were constrained using p-LINCS \cite{hess97,hess07}.
 
 The system was simulated for 500~ns using GROMACS 2019.2 \cite{abraham2015gromacs}, and the simulation data are available at Ref.~\citenum{MacRogPOPEfiles}.
 
@@ -908,7 +900,7 @@ was responsible for the solid-state NMR experiments/figures and took part in wri
 %% Please write description of your contribution here
 
 \noindent
-{\it Anne M. Kiirikki}
+{\it Anne M. Kiirikki} set up and performed POPC:POPG(1:1) and POPC:POPG(4:1) simulations with CHARMM36 and POPC:POPG(4:1) with Lipid17ecc. She also contributed to the NMRlipids databank.
 %% Please write description of your contribution here
 
 \noindent
@@ -943,7 +935,7 @@ Ran and analysed several simulations. Wrote the manuscript.
 
 \noindent
 {\it Thomas J. Piggot}
-%% Please write description of your contribution here
+Setup and performed many of the PE simulations including those with Berger, CHARMM36-UA, GROMOS 43A1-S3, GROMOS-CKP, and OPLS-UA force fields.
 
 \noindent
 {\it {\'A}ngel Pi{\~n}eiro}
