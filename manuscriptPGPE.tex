@@ -138,7 +138,8 @@ University of Groningen, 9747 AG Groningen, The Netherlands}
 
 
 \author{Antonio Pe{\'o}n}
-\affiliation{Spain}
+\affiliation{CIQUP, Centro de Investigação em Qu{\'i}mica, Departamento de Qu{\'i}mica e Bioqu{\'i}mica, Faculdade de Ci{\^e}ncias, Universidade do Porto, Porto, Portugal}
+
 
 \author{Thomas J. Piggot}
 \affiliation{Chemistry, University of Southampton, Highfield, Southampton SO17 1BJ, United Kingdom}
@@ -350,7 +351,7 @@ The most distinct order parameters are observed for PS headgroups, for which the
   }
 \end{figure*}
 
-MD simulations could be used to interpret the lipid conformational ensembles from experiments due to their direct connection to the measured C-H bond order parameters. To find the best models for this purpose, we have evaluated all the available MD simulation force fields of PC~\cite{botan15}, PS~\cite{antila19}, PE (Fig.~\ref{HGorderParametersPE}), and PG (Fig.~\ref{HGorderParametersPOPG}) lipids against NMR data in the NMRlipids project. The comparison of hundreds of simulation trajectories simulated with approximately 20 different force fields reveal that none of the current parameters can correctly capture the lipid conformational ensemble and reproduce the experimental C-H bond order parameters of all segments. However, the best parameters (CHARMM36) correctly capture the essential differences between PC, PE, PG and PS headgroup order parameters (Fig.~\ref{structures} B). 
+MD simulations could be used to interpret the lipid conformational ensembles from experiments due to their direct connection to the measured C-H bond order parameters. To find the best models for this purpose, we took advantage of the power of the NMRlipids project which has gathered a massive number of trajectories using open collaboration. We have thereby evaluated all the available MD simulation force fields of PC~\cite{botan15}, PS~\cite{antila19}, PE (Fig.~\ref{HGorderParametersPE}), and PG (Fig.~\ref{HGorderParametersPOPG}) lipids against NMR data in the NMRlipids project. The comparison of hundreds of simulation trajectories simulated with approximately 20 different force fields reveal that none of the current parameters can correctly capture the lipid conformational ensemble and reproduce the experimental C-H bond order parameters of all segments. However, the best parameters (CHARMM36) correctly capture the essential differences between PC, PE, PG and PS headgroup order parameters (Fig.~\ref{structures} B). 
 
 To understand the structural origin of distinct order parameters for PG and PS lipids,
 we first calculated the heavy atom dihedral angle distributions from the best performing simulations that reproduced the differences between headgroups~(Fig. \ref{DIHdists}).
@@ -440,7 +441,8 @@ in previous sections suggest that PC, PE, PG and PS lipid headgroups are very fl
 allowing them to bind proteins in various different conformations.
 To test this prediction, we analyzed the conformations of all protein-bound lipids 
 from structures deposited in the PDB \cite{berman00}.
-We found 311 PC, 394 PE, 154 PG, and 35 PS lipid conformations that were bound to different types of proteins and were determined as a part of protein structure using crystallography or cryo-EM. The full list of structures with bound lipids is available from {\it Data/PDBdistributions/pdbtable.pdf} in Ref.~\cite{NMRlipidsIVbgit}.
+We found 311 PC, 394 PE, 154 PG, and 35 PS lipid conformations that were bound to different types of proteins 
+(including both integral and peripheral membrane proteins) and were determined as a part of protein structure using crystallography or cryo-EM. The full list of structures with bound lipids is available from {\it Data/PDBdistributions/pdbtable.pdf} in Ref.~\cite{NMRlipidsIVbgit}.
 
 The heavy atom dihedral angle distributions calculated from these conformations 
 (Fig.~\ref{dihedralsFROMpdb} A) reveal that the protein-bound lipids indeed exhibit wide

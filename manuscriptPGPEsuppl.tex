@@ -51,7 +51,7 @@
 
 \author{Rebeca Garc{\'i}a Fandi{\~n}o}
 \affiliation{Center for Research in Biological Chemistry and Molecular Materials (CiQUS), Universidade de Santiago de Compostela, E-15782 Santiago de Compostela, Spain}
-\affiliation{CIQUP, Centro de Investigação em Química, Departamento de Química e Bioquímica, Faculdade de Ciências, Universidade do Porto, Porto, Portugal}
+\alsoaffiliation{CIQUP, Centro de Investigação em Qu\'{i}mica, Departamento de Qu\'{i}mica e Bioqu\'{i}mica, Faculdade de Ciências, Universidade do Porto, Porto, Portugal}
 
 \author{Fernando Favela-Rosales}
 \affiliation[Tecnol\'{o}gico Nacional de M\'{e}xico]{Departamento de Ciencias B\'{a}sicas, Tecnol\'{o}gico Nacional de M\'{e}xico, ITS Zacatecas Occidente, M\'{e}xico}
@@ -413,7 +413,7 @@ The order parameters were first calculated averaging over time separately
 for each lipid in the system. The average and
 the standard error of the mean were then calculated over different lipids.
 Code for all atom simulations is available in Ref.~\citenum{MATCHgit} (\texttt{scripts/calcOrderParameters.py}).
-For united atom simulations, we first constructed trajectories including hydrogens with ideal geometry using either \texttt{buildH} program~\cite{buildH} or (\texttt{scratch/opAAUA\_prod.py}) in  Ref.~\citenum{MATCHgit}, and the order parameters were then calculated from these trajectories. This approach has been tested against trajectories with explicit hydrogens and the deviations in order parameters are small \cite{buildH,piggot17}.\\
+For united atom simulations, we first constructed trajectories including hydrogens with ideal geometry using either \texttt{buildH} program~\cite{buildH} or (\texttt{scratch/opAAUA\_prod.py}) in  Ref.~\citenum{MATCHgit}, and the order parameters were then calculated from these trajectories. This approach has been tested against trajectories with explicit hydrogens and the deviations in order parameters are small \cite{buildHvalidation,piggot17}.\\
 %\todo{BuildH program is now cited with a direct link to the GitHub repo. I think that a release to Zenodo would be nice in the final publication.}\\
 
 
@@ -453,7 +453,7 @@ For united atom simulations, we first constructed trajectories including hydroge
       		& 288 	& 9386  %&0    
 		& 336  & 200 & 100 & \citenum{slipidsDPPEfiles}  \\
       POPE	& Slipids \cite{jambeck12b} %&0    
-      		& 336	& ?     %&0    
+      		& 336	& 15254     %&0    
 		& 310  & 2$\times$200 &  2$\times$100 & \citenum{slipidsPOPEfiles}  \\
       POPE	& Slipids \cite{jambeck12b}            %& 0
 		& 500 & 25000 %& 0   
@@ -749,7 +749,7 @@ Simulations of POPE membranes using the Berger force field employed two variants
 %\noindent {\it DOPE} Data is available at \cite{bergerDOPEfiles,berger2DOPEfiles}. \todo{Simulation details by  T. Piggot.}
 
 \noindent {\it POPC:POPE mixtures} 
-Two systems were simulated using the Berger force field~\cite{Berger97}, pure POPC and a mixture 50:50 POPC:POPE. For POPE, we additionnally used the de Vries modification implementing a repulsion of the hydrogen atoms located on the amino group of ethanolamine~\cite{devries04}.
+Two systems were simulated using the Berger force field~\cite{Berger97}, pure POPC and a mixture 50:50 POPC:POPE. For POPC, parameters with the Bachar~\cite{bachar04} correction for the dihedrals next to double bond were used (Berger-POPC-07). For POPE, we additionnally used the de Vries modification implementing a repulsion of the hydrogen atoms located on the amino group of ethanolamine~\cite{devries04}.
 Starting from a PDB file of a pure POPC system with Berger atom names, a 50:50 POPC:POPE mixture was built by mutating randomly methyl groups to hydrogens (POPC -> POPE). Each system contained 256 lipids (for the mixture 64 lipids per leaflet for each species) and about 40 water molecules per lipid. No ions were added. Both systems were minimized and equilibrated. The production simulations were run for 300 ns with a time step of 2 fs. The first 100 ns were discarded for the analysis. The simulations were run with GROMACS 4.5.3~\cite{pronk13} version. The v-rescale thermostat~\cite{bussi07} was used with a temperature of 300 K and a time constant of 0.1 ps; lipids and water were coupled separately to the heat bath. Pressure was kept constant at 1 bar using a semi–isotropic Parrinello–Rahman barostat~\cite{parrinello81} with a time constant of 4.0 ps. A real space cut-off of 1.0 nm was employed for van der Waals and electrostatic interactions. The long-range part of electrostatic interactions was evaluated using the PME method~\cite{darden93,essman95} with a grid spacing of 0.12 nm and an interpolation order of 4. All bonds with hydrogen atoms were constrained with the LINCS algorithm~\cite{hess07,hess97}. Water molecules were kept rigid with the SETTLE algorithm~\cite{miyamoto92}. The simulation files are available from
 Ref.~\citenum{POPCberger300K} (pure POPC) and~\citenum{POPC1POPE1berger} (POPC:POPE mixture).
 
