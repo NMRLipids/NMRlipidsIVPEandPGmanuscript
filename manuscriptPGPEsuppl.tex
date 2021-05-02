@@ -43,10 +43,10 @@
 
 
 \author{\scriptsize Am{\'e}lie Bacle}
-\affiliation{Laboratoire Coop\'{e}ratif "Lipotoxicity and Channelopathies - ConicMeds", Universit\'{e} de Poitiers, 1 rue Georges Bonnet, 86000 Poitiers, France }
+\affiliation{\tiny Laboratoire Coop\'{e}ratif "Lipotoxicity and Channelopathies - ConicMeds", Universit\'{e} de Poitiers, 1 rue Georges Bonnet, 86000 Poitiers, France}
 
 \author{\scriptsize Pavel Buslaev}
-\affiliation{\tiny Nanoscience Center and Department of Chemistry, University of Jyväskylä, P.O. Box 35, 40014 Jyväskylä, Finland}
+\affiliation{Nanoscience Center and Department of Chemistry, University of Jyväskylä, P.O. Box 35, 40014 Jyväskylä, Finland}
 \affiliation{Research Center for Molecular Mechanisms of Aging and Age-related Diseases, Moscow Institute of Physics and Technology, 141701 Dolgoprudny, Russia}
 
 \author{Rebeca Garc{\'i}a Fandi{\~n}o}
@@ -528,22 +528,22 @@ For united atom simulations, we first constructed trajectories including hydroge
     \begin{tabular}{l c c r r r r r r c c}
       %\hline
       % some footnotes are not visible in typeset-MS (pdf)
-      lipid/counter-ions & force field for lipids / ions &  \footnote{Number of lipid molecules with largest mole fraction}N$_{\rm l}$   &  \footnote{Number of water molecules}N$_{\rm w}$   & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time used for analysis}t$_{{\rm anal}}$ (ns) &   \footnote{Reference for simulation files}files\\
+      lipid/counter-ions & force field for lipids / ions &  \footnote{Number of lipid molecules}N$_{\rm l}$   &  \footnote{Number of water molecules}N$_{\rm w}$   & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time used for analysis}t$_{{\rm anal}}$ (ns) &   \footnote{Reference for simulation files}files\\
       \hline
       POPG/K$^+$  & CHARMM36 \cite{venable13}        & 118& 4110    & 298  & 100 & 100 & \citenum{CHARMM36popg}  \\
 %      POPG             & CHARMM36 \cite{venable13}        & 0.11           & 500 & 25000 & 49  &  310  & 500 & 100 & \cite{POPGcharmm150mMNaCl} \\
-      POPG             & CHARMM36 \cite{venable13}                & 500 & 25000  &  310  & 500 & 100 & \citenum{POPGcharmm} \\
+%      POPG/?             & CHARMM36 \cite{venable13}                & 500 & 25000  &  310  & 500 & 100 & \citenum{POPGcharmm} \\
       \hline
       POPG/Na$^+$  & Slipids / {\AA}qvist \cite{jambeck13,aqvist90}            & 288 	& 10664   & 298  & 250 & 100 & \citenum{slipidsPOPGfiles} \\
       DPPG/Na$^+$  & Slipids / {\AA}qvist \cite{jambeck13,aqvist90}           & 288 	& 11232   & 314  & 200 & 100 & \citenum{slipidsDPPGfiles} \\
-      DPPG/Na$^+$  & Slipids / {\AA}qvist \cite{jambeck13,aqvist90}           & 288 	& 11232   & 298  & 400 & 100 & \citenum{slipidsDPPGfilesT298K} \\
-      POPG         & Slipids / {\AA}qvist \cite{jambeck13,aqvist90}      & 500 & 25000  &  310  & 500 & 100 & \citenum{POPGslipids} \\
+%      DPPG/Na$^+$  & Slipids / {\AA}qvist \cite{jambeck13,aqvist90}           & 288 	& 11232   & 298  & 400 & 100 & \citenum{slipidsDPPGfilesT298K} \\
+%      POPG/?         & Slipids / {\AA}qvist \cite{jambeck13,aqvist90}      & 500 & 25000  &  310  & 500 & 100 & \citenum{POPGslipids} \\
 %      POPG         & Slipids / {\AA}qvist \cite{jambeck13,aqvist90}    & 0.11    & 500 & 25000 & 49  &  310  & 500 & 100 & \cite{POPGslipids150mMNaCl} \\
       \hline
-      POPG             & LIPID17 / Dang \cite{gould18,smith94,dang06}     & 500 & 25000  &  310  & 500 & 100 & \citenum{POPGlipid17} \\
+      POPG/?             & Lipid17 / Dang \cite{gould18,smith94,dang06}     & 500 & 25000  &  310  & 500 & 100 & \citenum{POPGlipid17} \\
 %      POPG             & LIPID17 \cite{gould18}         & 0.11           & 500 & 25000 & 49  &  310  & 500 & 100 & \cite{POPGlipid17150mMNaCl} \\
       \hline
-      POPG             & GROMOS-CKP \cite{??}         & 500 & 25000 &  310  & 500 & 100 & \citenum{POPGgromosCKP} \\
+      POPG/?             & GROMOS-CKP \cite{??}         & 500 & 25000 &  310  & 500 & 100 & \citenum{POPGgromosCKP} \\
 %      POPG             & GROMOS-CKP \cite{??}         & 0.11           & 500 & 25000 & 49 &  310  & 500 & 100 & \cite{POPGgromosCKP150mMNaCl} \\
     \end{tabular}
     }
