@@ -202,11 +202,24 @@ It should be noted that the PG headgroup is biologically abundant R enantiomer i
   \centering
   \includegraphics[width=9.0cm]{./Figs/HGorderparametersPG.pdf}
   \caption{\label{HGorderParametersPOPG}
-    The headgroup and glycerol backbone order parameters of PG lipids
-    from experiments (POPG and signs from this work and from Ref.~\citenum{borle85}, %contains 10mM of PIPES,
-    DPPG with 100mM NaCl from Ref.~\citenum{wohlgemuth80},% contains 10mM PIPES and,
-    and E.Coli PG results from Ref.~\citenum{gally81})
-    and simulations with different force fields.
+    C--H bond order parameters, $S_{\rm CH}$, of the PG headgroup ($\beta$ and $\alpha$) and
+    glycerol backbone (g$_3$, g$_2$, g$_1$) carbons
+    from MD simulations with different force fields (symbols) and
+    NMR experiments (horizontal lines;
+    $^{13}$C NMR POPG and signs from this work,
+    $^2$H NMR POPG from Ref.~\citenum{borle85}, % contains 10 mM of PIPES,
+    DPPG from Ref.~\citenum{wohlgemuth80}, % and 10 mM PIPES
+    and {\it Escherichia coli} PG from Ref.~\citenum{gally81}).
+    ///
+    Experimental data for DPPG had been measured with 0.1\,M NaCl~\cite{wohlgemuth80}, while all of the other data are with
+    (Na$^+$, except for CHARMM36 K$^+$) counterions only.
+    The DPPG is [R],
+    2H POPG beta racemic, alpha 3,3' averaged, which should equal 3,1'~\cite{wohlgemuth80}
+    13C POPG racemic.
+    $^2$ NMR DPPG and POPG in 10\,mM PIPES buffer.
+    ///
+    The light blue areas span 0.04 units around the average of the extremal experimental values,
+    in accordance with the expected quantitative accuracy of experiments~\cite{ollila16}.
   }
 \end{figure}
 
@@ -523,18 +536,18 @@ For united atom simulations, we first constructed trajectories including hydroge
       \hline
       POPG/K$^+$  & CHARMM36 \cite{venable13}        & 118& 4110    & 298  & 100 & 100 & \citenum{CHARMM36popg}  \\
 %      POPG             & CHARMM36 \cite{venable13}        & 0.11           & 500 & 25000 & 49  &  310  & 500 & 100 & \cite{POPGcharmm150mMNaCl} \\
-      POPG             & CHARMM36 \cite{venable13}                & 500 & 25000  &  310  & 500 & 100 & \citenum{POPGcharmm} \\
+%      POPG             & CHARMM36 \cite{venable13}                & 500 & 25000  &  310  & 500 & 100 & \citenum{POPGcharmm} \\
       \hline
       POPG/Na$^+$  & Slipids / {\AA}qvist \cite{jambeck13,aqvist90}            & 288 	& 10664   & 298  & 250 & 100 & \citenum{slipidsPOPGfiles} \\
       DPPG/Na$^+$  & Slipids / {\AA}qvist \cite{jambeck13,aqvist90}           & 288 	& 11232   & 314  & 200 & 100 & \citenum{slipidsDPPGfiles} \\
-      DPPG/Na$^+$  & Slipids / {\AA}qvist \cite{jambeck13,aqvist90}           & 288 	& 11232   & 298  & 400 & 100 & \citenum{slipidsDPPGfilesT298K} \\
-      POPG         & Slipids / {\AA}qvist \cite{jambeck13,aqvist90}      & 500 & 25000  &  310  & 500 & 100 & \citenum{POPGslipids} \\
+%      DPPG/Na$^+$  & Slipids / {\AA}qvist \cite{jambeck13,aqvist90}           & 288 	& 11232   & 298  & 400 & 100 & \citenum{slipidsDPPGfilesT298K} \\
+%      POPG         & Slipids / {\AA}qvist \cite{jambeck13,aqvist90}      & 500 & 25000  &  310  & 500 & 100 & \citenum{POPGslipids} \\
 %      POPG         & Slipids / {\AA}qvist \cite{jambeck13,aqvist90}    & 0.11    & 500 & 25000 & 49  &  310  & 500 & 100 & \cite{POPGslipids150mMNaCl} \\
       \hline
-      POPG             & LIPID17 / Dang \cite{gould18,smith94,dang06}     & 500 & 25000  &  310  & 500 & 100 & \citenum{POPGlipid17} \\
-%      POPG             & LIPID17 \cite{gould18}         & 0.11           & 500 & 25000 & 49  &  310  & 500 & 100 & \cite{POPGlipid17150mMNaCl} \\
+      POPG/Na$^+$         & Lipid17 / Dang \cite{gould18,smith94,dang06}     & 500 & 25000  &  310  & 500 & 100 & \citenum{POPGlipid17} \\
+%      POPG             & Lipid17 \cite{gould18}         & 0.11           & 500 & 25000 & 49  &  310  & 500 & 100 & \cite{POPGlipid17150mMNaCl} \\
       \hline
-      POPG             & GROMOS-CKP / GROMOS54A7 \cite{piggot11,schmid11}         & 500 & 25000 &  310  & 500 & 100 & \citenum{POPGgromosCKP} \\
+      POPG/Na$^+$             & GROMOS-CKP / GROMOS 54A7 \cite{piggot11,schmid11}         & 500 & 25000 &  310  & 500 & 100 & \citenum{POPGgromosCKP} \\
 %      POPG             & GROMOS-CKP \cite{??}         & 0.11           & 500 & 25000 & 49 &  310  & 500 & 100 & \cite{POPGgromosCKP150mMNaCl} \\
     \end{tabular}
     }
