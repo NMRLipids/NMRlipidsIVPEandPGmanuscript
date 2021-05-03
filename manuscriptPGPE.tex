@@ -158,26 +158,15 @@ University of Groningen, 9747 AG Groningen, The Netherlands}
 
 \begin{abstract}
 % insert abstract here
-  The chemistry of lipid headgroups, the water facing components of cell membranes that regulate cell functions via lipid--protein interactions, varies between organisms and organelles. 
-  In biological membranes at physiological conditions,
-  lipid molecules sample an ensemble of conformations.
-  However, the individual sets of conformations in the ensemble and their dependence on lipid types have not yet been experimentally determined. 
-  It then remains unclear how the interactions with membrane proteins
-  are related to the structural configurations of the lipids. 
-  Here, we combine solid-state NMR experiments and molecular dynamics simulations from the NMRlipids open collaboration to resolve the conformational ensembles of the headgroups of several key lipid types in the liquid phase under various biologically relevant conditions. Interpretation of the NMR observables using the plethora of simulation data collected in the NMRlipids project suggests that all lipid headgroups sample a wide range of conformations in both neutral and charged cellular membranes.
-  Only the overall orientations of the headgroups 
-  measured by P-N/C$_\gamma$ vector 
-  is affected by membrane charge
-  and is related to the C$_\beta$ headgroup order parameter. 
+  The chemistry of lipid headgroups, the water facing components of cell membranes that regulate cell functions via lipid--protein interactions, varies between organisms and organelles. In physiologically relevant liquid state,
+  lipid molecules are not fixed to a single structure but they sample an ensemble of conformations with the Boltzmann weighted probabilities.
+  However, the distributions of conformations in these ensembles and their dependence on lipid types have not yet been experimentally determined. 
+  Therefore, it has not been clear if lipid molecules exchange between few rigid conformations,
+  or if they can freely fluctuate in all possible conformations.
+  Here, we combine solid-state NMR experiments and molecular dynamics simulations from the NMRlipids open collaboration to resolve the conformational ensembles of headgroups of several key lipid types in various biologically relevant conditions. Interpretation of the NMR observables using the plethora of simulation data collected in the NMRlipids project suggests that all lipid headgroups sample a wide range of conformations in both neutral and charged cellular membranes.
   Differences in the headgroup chemistry between different lipid types manifest
-  in the conformation probability distributions, 
-  nevertheless all lipid types can access almost any of the possible conformations.
-  This is in line with our analysis of protein-bound lipids from the protein data bank (PDB), 
-  which suggests that all lipid types can bind to proteins in a wide range of conformations independently of their headgroup chemistry. Therefore, the selective adsorption of peripheral proteins to membranes and binding of lipids to transmembrane proteins are likely regulated by specific protein--lipid interactions rather than conformational restrictions of the bilayer lipids 
-  justifying the use of simplified coarse-grained models,
-  which account for the intermolecular interactions 
-  as well as for the entropic effects 
-  in their effective empirical potentials.
+  in probability distributions of conformations, but all lipid types can access almost any of the possible conformations.
+  Together with the analysis of 894 protein-bound lipid structures from the protein data bank (PDB), this suggests that lipids can bind to proteins in wide range of conformations which are not limited by the headgroup chemistry. Therefore, the selective adsorption of peripheral proteins to membranes and binding of lipids to transmembrane proteins are likely regulated by specific protein--lipid interactions rather than conformational restrictions of the lipids.
   Our results pave the way to comprehensive understanding of
   lipid mediated signaling and lipid--protein interactions in biomedical applications.
 
@@ -204,7 +193,7 @@ Specific interactions with certain lipid headgroups
 are known to be essential for the function of several proteins \cite{lee11,lemmon08},
 but it is not clear if the specificity arises from the
 differences in accessible conformations between lipid types or
-only from specific non-covalent lipid--protein interactions.
+from specific non-covalent lipid--protein interactions.
 
 Structures of protein-bound lipids are available in the protein data bank (PDB) \cite{berman00}
 and crystal structures of lipids have been determined \cite{buldt81,pascher92},
@@ -226,14 +215,14 @@ Here, we use natural abundance $^{13}$C NMR experiments %(enabling the determina
 and MD simulations from the NMRlipids open collaboration
 to resolve the differences in the conformational ensembles between PC, PE, PG and PS lipid headgroups.
 We elucidate also the effect of charges and protein binding to lipid headgroup conformations.
-Zwitterionic PC and PE lipids are the most common lipids in eukaryotes and bacteria, respectively \cite{vanmeer08,sohlenkamp16}.
+Zwitterionic PC and PE are the most common lipids in eukaryotes and bacteria, respectively \cite{vanmeer08,sohlenkamp16}.
 PE is also the second most abundant glycerophospholipid in eukaryotic cells
 and has been related to various diseases \cite{vance15,calzada16,patel17}.
 PS and PG are the most common negatively charged lipids in eukaryotes and bacteria, respectively,
 and their presence affect membrane protein functionality and signaling \cite{lemmon08,leventis10,sohlenkamp16,hariharan18}.
 All the studied lipids specifically bind to various proteins \cite{yeagle14}.
 
-The similarity of glycerol backbone and headgroup order parameters in model membranes and bacteria \cite{gally81,scherer87,seelig90}
+Similarity of glycerol backbone and headgroup order parameters in model membranes and bacteria \cite{gally81,scherer87,seelig90}
 suggest that our results can be used to 
 understand the biological role of lipid headgroups in lipid--protein interactions.
 These interactions are crucial, for example, in lipid mediated signaling \cite{lemmon08} and
@@ -265,7 +254,7 @@ Best models for the interpretation of lipid headgroup conformational ensembles f
 using quality evaluation measures defined in the NMRlipids project.
 Conformational ensembles of headgroup and glycerol backbone in PE and PG simulations were evaluated using the C--H bond order parameters \cite{botan15}. Interactions between different headgroups were evaluated by monitoring the changes in headgroup order parameters upon mixing the lipids \cite{antila19}. The ion binding affinities and response of lipids to bound charge were evaluated by monitoring the changes in lipid headgroup order parameters \cite{catte16,antila19}.
 
-The differences in headgroup conformation ensembles were analyzed calculating the distributions of the last six heavy atom dihedral angles, i.e., dihedrals O$_\alpha$-C$_\alpha$-C$_\beta$-N/C$_\gamma$, P-O$_\alpha$-C$_\alpha$-C$_\beta$, O$_{g3}$-P-O$_\alpha$-C$_\alpha$, g$_3$-O$_{g3}$-P-O$_\alpha$, g$_2$-g$_3$-O$_{g3}$-P, and g$_1$-g$_2$-g$_3$-O$_{g3}$ labeled in Fig. \ref{HGorderParameters} C. Relative energy costs for turning dihedral angles with respect to the most probable value (lowest energy) were estimated from the inverse Boltzmann formula $\Delta E(\theta) = -kT \left[\ln\left[p(\theta)\right]-\ln\left[p(\theta_0)\right] \right]$, where $p(\theta)$ is the dihedral angle distribution and $\theta_0$ is the most probable angle from MD simulation.
+The differences in headgroup conformation ensembles were analyzed calculating the distributions of six dihedral angles, O$_\alpha$-C$_\alpha$-C$_\beta$-N/C$_\gamma$, P-O$_\alpha$-C$_\alpha$-C$_\beta$, O$_{g3}$-P-O$_\alpha$-C$_\alpha$, g$_3$-O$_{g3}$-P-O$_\alpha$, g$_2$-g$_3$-O$_{g3}$-P, and g$_1$-g$_2$-g$_3$-O$_{g3}$, labeled in Fig. \ref{HGorderParameters} C. Relative energy costs for turning dihedral angles with respect to the most probable value (lowest energy) were estimated from the inverse Boltzmann formula $\Delta E(\theta) = -kT \left[\ln\left[p(\theta)\right]-\ln\left[p(\theta_0)\right] \right]$, where $p(\theta)$ is the dihedral angle distribution and $\theta_0$ is the most probable angle from MD simulation.
 
 
 %\clearpage
@@ -299,25 +288,12 @@ using the ligand names listed in the supplementary information.
 Dihedral distributions from the lipid structures were calculated
 using the MDAnalysis Python library \cite{agrawal11,gowers16} and
 Jupyter notebook available from {\it scripts/PDBanalysis.ipynb} folder in Ref~\citenum{NMRlipidsIVbgit}.
-Only the structures determined using X-ray crystallography or Cryo-EM with a resolution higher than 3.2~\text{\AA} were used in the analysis. 
-Copies of the lipids from symmetric structures of multimeric proteins 
-that exhibited identical configurations 
-(dihedral angles matching within 3 degrees)
-were counted only once
-to aviod putting an artificially large weight on the conformation.
-
+Only the structures determined using X-ray crystallography or Cryo-EM with a resolution higher than 3.2~\text{\AA} were used in the analysis. Some structures of multimeric proteins contained multiple lipids in the same conformation. The conformations were considered identical if all dihedral angles were the same within 3 degrees. In these cases, this conformation was counted only once for the subsequent analyses
+to avoid its overweighting.
   
-To demonstrate the existence of similar structures of different lipids bound to different proteins, we searched for pairs having the last five headgroup heavy atom dihedral angles (excluding g$_1$-g$_2$-g$_3$-O$_{g3}$) within
+To demonstrate the existence of similar structures of different lipids bound to different proteins, we searched for pairs having the last five heavy atom dihedrals angles in the headgroup end (excluding g$_1$-g$_2$-g$_3$-O$_{g3}$ from the list in previous section) within
 30 degrees of each other among the structures with resolution higher than 2.5~\text{\AA}. The two most representative examples
 were handpicked from the results.
-
-The pairs of different protein-attached/interacting lipids 
-with similar configuration
-were searched by comparing the following torsion angles
-A LIST OF THE COMPARED ANGLES.
-Pairs of lipids were selected as having similar structure
-if their torsion angles agreed within 30$^/circ$. 
-Only the crystal structures structures with a resolution higher than 2.5~\text{\AA} were used. 
 
 
 \section{Results and Discussion}
@@ -331,7 +307,7 @@ Only the crystal structures structures with a resolution higher than 2.5~\text{\
      \textbf{B)} Headgroup and glycerol backbone region order parameters of different different lipids.
      \textbf{C)} Relative energies for individual heavy atom dihedral angles estimated from the inverse Boltzmann formula.
      Angles corresponding energies above 7~$k\mathrm{B}T$ are not shown because they are not observed in simulations.
-     \textbf{D)} Distributions of P--N/C$_\gamma$ vector angle with respect to membrane normal without entropic correction.
+     \textbf{D)} Distributions of P--N/C$_\gamma$ vector angle with respect to membrane normal.
   }
 \end{figure*}
 
@@ -356,18 +332,7 @@ This interpretation is confirmed by SIMPSON calculations in Fig.~\ref{POPGsimpso
 Experimental order parameters of POPC, POPE, POPG and POPS glycerol backbones and headgroups from this and previous studies are collected in Fig.~\ref{HGorderParameters}D, where the signs from $^{13}$C NMR experiments are used also for the $^2$H NMR data from the literature. The overall agreement of order parameters determined by different research teams and different techniques for the same lipid headgroup is excellent here and in previous studies \cite{botan15,ollila16,antila19}. Therefore, the differences between lipid types are dictated by the headgroup chemistry rather than inaccuracies in experiments, differences in the acyl chains, or in experimental conditions.
 
 
-The most distinct order parameters are observed for PS headgroups, for which the $\alpha$-carbon order parameter exhibits significant forking (different values for different hydrogens bound to the same carbon) and the $\beta$-carbon has a more negative value than other studied lipid types. On the other hand, the $\beta$-carbon order parameter of PG headgroup has a positive sign, in contrast to all the other lipid types. This has not been previously observed  in $^2$H NMR experiments detecting only the absolute values~\cite{wohlgemuth80,gally81,borle85}.
-This means that compared to the other phospholipids 
-the orientation of the C$_\beta$–H bond in the PG headgroup
-has a small preference for being parallel to the membrane normal.
-At the same time,
-increasing the $\beta$-carbon order parameters in the phospholipids
-yields corresponding systematic shifts 
-of the P-N/C$_\gamma$ vector angle distributions 
-towards configurations perpendicular to the membrane normal 
-(Fig \ref{structures}~B and D). 
-
-The glycerol backbone order parameters are similar for all the lipid types, although they move slightly toward positive values (closer to zero) in the order PC $<$ PE $<$ PS $<$ PG. Only minor differences between PC and PE headgroups are observed.
+The most distinct order parameters are observed for PS headgroups, for which the $\alpha$-carbon order parameter exhibits significant forking (different values for different hydrogens bound to the same carbon) and the $\beta$-carbon has a more negative value than other studied lipid types. On the other hand, the $\beta$-carbon order parameter of PG headgroup has a positive sign, in contrast to all the other lipid types. This has not been previously observed  in $^2$H NMR experiments detecting only the absolute values~\cite{wohlgemuth80,gally81,borle85}. The glycerol backbone order parameters are similar for all the lipid types, although they move slightly toward positive values (closer to zero) in the order PC $<$ PE $<$ PS $<$ PG. Only minor differences between PC and PE headgroups are observed.
 
 \subsection{Conformational ensembles of different lipid headgroups from MD simulations}
 
@@ -405,21 +370,17 @@ Rest of the dihedrals are similar between different lipids,
 with the exception of PS lipids for which slightly larger energy for \textit{eclipsed anti} conformation
 in g$_3$-O$_{{\mathrm g}3}$-P-O$_\alpha$ dihedral was observed.
 Therefore we suggest that the main differences between lipid headgroups leading to distinct order parameters occur in the headgroup end, while phosphate region remains similar in different lipids with the exception of PS. The increased barriers for dihedral rotations may explain the more rigid headgroup structures in PS~\cite{browning80,buldt81}. Furthermore, the angle between headgroup dipole and membrane normal decreases in the order of PG $>$ PE  $>$ PC  $>$ PS (Fig.~\ref{structures}D). However, the differences between PC and PE in P-O$_\alpha$-C$_\alpha$-C$_\beta$ dihedral
-and P--N/C$_\gamma$ vector dipole may be artificial as the $\beta$-carbon order parameter in PC is too negative even in the best available force field, thereby not being equal to the order parameter in PE as observed in experiments \cite{botan15}.
+and P--N vector dipole may be artificial as the $\beta$-carbon order parameter in PC is too negative even in the best available force field, thereby not being equal to the order parameter in PE as observed in experiments \cite{botan15}.
 
-In conclusion, all studied lipid headgroups sample very broad conformational ensembles in the liquid lamellar phase and the sampled dihedral angles are within similar ranges for all headgroup types. % (Fig. \ref{structures}).
+In conclusion, all studied lipid headgroups sample very broad conformational ensembles in the liquid lamellar phase and the sampled dihedral angles are within similar ranges for all headgroup types.
 Since the rotation of dihedral angles to almost any position bears relatively low energy cost, the lipid headgroups are able to adopt a wide range of conformations when interacting with proteins, ions, or other biomolecules.
-MD simulations can represent such conformational ensembles 
-with accurate enough force fields.
-%Our results support the models proposing free rotation around phosphate group for PC lipids, which decouples the dynamics and conformations between acyl chains and headgroups \cite{klauda08c,antila21b}, and suggests that these models could be applied for all lipids containing the phosphorus group.
-%The wide range of observed conformations suggest that
 Therefore, the structures in lipid crystals \cite{buldt81,pascher92} are not representative of the liquid state, and models aiming to explain NMR data using only a few conformations \cite{seelig77c,davis83,Semchyschyn04,akutsu20} are not sufficient to capture the large conformational space of lipids in the liquid lamellar state.
 However, MD simulations with accurate force fields can be expected to capture the correct conformational ensembles of lipids.
 
 
-\subsection{Lipid conformational ensembles in charged membranes are not restrained}
+\subsection{Lipid conformational ensembles in charged membranes}
 
-Charged entities, such as lipids, proteins, surfactants, drugs, and ions incorporated in membranes can change the orientation of the headgroup dipole in PC lipids and affect the order parameters of the lipid headgroups \cite{seelig87, botan15, melcr18}. However, the detailed understanding of the structural and energetic responses of lipids to membrane-bound electric charge is still lacking \cite{Semchyschyn04}.
+Charged entities, such as lipids, proteins, surfactants, drugs, and ions incorporated in membranes can change the orientation of the headgroup dipole in PC lipids and affect the order parameters of the lipid headgroups~\cite{seelig87}. However, the detailed understanding of the structural and energetic responses of lipids to membrane-bound electric charge is still lacking \cite{Semchyschyn04}.
 
 To resolve lipid headgroup conformational ensembles in cellular membranes bearing positive charge,
 we calculated the heavy atom dihedral angle distributions from 
@@ -430,7 +391,7 @@ in figures \ref{HGorderparametersPCvsSURFdihedrals} and \ref{changesWITHsurf} B)
 addition of positive charge into a membrane 
 decreases the abundance of \textit{trans} states in g$_2$-g$_3$-O$_{g_3}$-P and g$_3$-O$_{g_3}$-P-O$_\alpha$
 dihedrals.
-The choline region remains essentially unchanged and only minor changes are observed in the remaining headgroup dihedrals even at a surfactant molar fraction of 0.47 (Fig S\ref{HGorderparametersPCvsSURFdihedrals} in SI).
+The choline region remains essentially unchanged and only minor changes are observed in the other dihedrals even at a surfactant molar fraction of 0.47.
 
 In addition, binding of ions to the membrane may affect the lipid headgroup conformational ensembles under physiological conditions.
 The bound Ca$^{2+}$ ion to PC headgroup leads to similar decrease in trans state probability for g$_3$-O$_{g3}$-P-O$_\alpha$ dihedral
@@ -532,10 +493,6 @@ We suggest that the key to understand selective binding of certain lipid types t
 are intermolecular lipid--protein interactions, rather than conformational restrictions of the lipids.
 On the other hand, broad conformational ensembles in bulk bilayers suggest that lipid crystal structures
 play a minor role while the entropic cost of lipid binding may be significant.
-This provides further justification for using simplified coarse-grained models,
-which account for the intermolecular interactions 
-as well as for the entropic effects 
-in their effective empirical potentials. \cite{LipidFingerprints2018}
 Finally, we demonstrated the power of open access MD simulation data from the NMRlipids open collaboration
 to complement the data in the PDB for elucidating how complex systems made up of disordered biomolecules behave.
 
@@ -578,7 +535,7 @@ J.M. thanks the Center for Information Technology of the University of Groningen
 %\newpage
 %\section{APPENDIX: The NMR results reported by Tiago Ferreira}
 
-\listoftodos
+%\listoftodos
 
 \end{document}
 %
