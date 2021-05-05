@@ -68,7 +68,7 @@
 % Multiple \preprint commands are allowed.
 %\preprint{}
 
-\title{Conformational plasticity of phospholipid headgroups in simulations and experiments} %Title of paper
+\title{Conformational plasticity of lipid headgroups in cellular membranes and protein--lipid complexes} %Title of paper
 
 % repeat the \author .. \affiliation  etc. as needed
 % \email, \thanks, \homepage, \altaffiliation all apply to the current author.
@@ -83,7 +83,7 @@
 \affiliation{Laboratoire Coop{\'e}ratif "Lipotoxicity and Channelopathies - ConicMeds", Universit{\'e} de Poitiers, 1 rue Georges Bonnet, 86000 Poitiers, France }
 
 \author{Pavel Buslaev}
-\affiliation{Nanoscience Center and Department of Chemistry, University of Jyväskylä, P.O. Box 35, 40014 Jyväskylä, Finland}
+\affiliation{Nanoscience Center and Department of Chemistry, University of Jyv{\"a}skyl{\"a}, P.O. Box 35, 40014 Jyv{\"a}skyl{\"a}, Finland}
 \affiliation{Research Center for Molecular Mechanisms of Aging and Age-related Diseases, Moscow Institute of Physics and Technology, 141701 Dolgoprudny, Russia}
 
 \author{Rebeca Garc{\'i}a Fandi{\~n}o}
@@ -202,6 +202,8 @@ but their relation to the conformational ensembles in bulk membranes in the liqu
 The most accurate experimental information on conformational ensembles of lipids
 in this biologically relevant phase are typically derived from NMR experiments, particularly from the
 C--H bond order parameters $S_\mathrm{CH}$ measured using $^2$H\,NMR~\cite{seelig77c,davis83,Semchyschyn04}.
+Because these order parameters are similar as in living cells \cite{gally81,scherer87,seelig90},
+the model membranes can be used to resolve the lipid headgroup conformations in biological conditions.
 According to these experiments, the glycerol backbone conformations are largely similar irrespective of the headgroup \cite{gally81}, and
 the headgroup conformations are similar in the phosphatidylcholine (PC), phosphatidylethanolamine (PE), and phosphatidylglycerol (PG) lipids,
 whereas the phosphatidylserine (PS) headgroup is more rigid \cite{wohlgemuth80,buldt81}. 
@@ -219,9 +221,6 @@ PS are the most common negatively charged lipids in eukaryotes and PG in bacteri
 and both are known to affect membrane protein functionality and signaling \cite{lemmon08,leventis10,sohlenkamp16,hariharan18}.
 All the four studied lipid types specifically bind to various proteins \cite{yeagle14};
 we therefore elucidate also the effect of protein binding to headgroup conformations.
-Similarity of glycerol backbone and headgroup order parameters in model membranes and bacteria \cite{gally81,scherer87,seelig90}
-suggest that our results can be used to 
-understand the biological role of lipid headgroups in lipid--protein interactions.
 These interactions are crucial, for example, in lipid-mediated signaling \cite{lemmon08} and for the
 design of phoshopolipid-specific antibodies \cite{vigant15}. 
 
@@ -305,7 +304,7 @@ were handpicked from the results.
      \textbf{A)} Snapshots with overlayed C$_\beta$, C$_\alpha$ and O$_\alpha$ atoms and occurrence of different conformations.
      \textbf{B)} Headgroup and glycerol backbone region order parameters of different lipids.
      \textbf{C)} Relative energies for individual heavy atom dihedral angles estimated from the inverse Boltzmann formula.
-     Angles corresponding to energies above 7~$k_\mathrm{B}T$ are not shown because they are not observed in simulations.
+     Angles corresponding to energies above 8~$k_\mathrm{B}T$ are not shown because they are not observed in simulations.
      \textbf{D)} Distributions of P--N/C$_\gamma$ vector angle with respect to membrane normal.
   }
 \end{figure*}
@@ -352,7 +351,7 @@ we first calculated the heavy atom dihedral angle distributions from the best pe
 Then, we used the inverse Boltzmann formula to estimate the
 energy costs for different dihedral angle orientations.
 The results in Fig.~\ref{structures}C suggest that all lipid headgroups are very flexible and
-energy costs for rotating individual dihedrals to almost any angle is low (below 7~$k_\mathrm{B}T$).
+energy costs for rotating individual dihedrals to almost any angle is low (below 8~$k_\mathrm{B}T$).
 Only $cis$ states of P-O$_\alpha$-C$_\alpha$-C$_\beta$ and g$_2$-g$_3$-O$_{g_3}$-P have larger relative
 energies and are not observed for any lipids during the simulations.
 
@@ -368,7 +367,7 @@ The rest of the dihedrals are similar between different lipids,
 with the exception of PS lipids for which slightly larger energy for \textit{eclipsed anti} conformation
 in g$_3$-O$_{{\mathrm g}3}$-P-O$_\alpha$ dihedral was observed.
 Therefore we suggest that the main differences between lipid headgroups leading to distinct order parameters occur in the headgroup end, while in the phosphate region they remain similar in different lipids with the exception of PS. The increased barriers for dihedral rotations may explain the more rigid headgroup structures in PS~\cite{browning80,buldt81}. Furthermore, the angle between headgroup dipole and membrane normal decreases in the order of PG $>$ PE  $>$ PC  $>$ PS (Fig.~\ref{structures}D). However, the differences between PC and PE in P-O$_\alpha$-C$_\alpha$-C$_\beta$ dihedral
-and P--N vector dipole may be artificial as the $\beta$-carbon order parameter in PC is too negative even in the best available force field, thereby not being equal to the order parameter in PE as observed in experiments \cite{botan15}.
+and P--N vector dipole may be artificial as the $\beta$-carbon order parameter in PC is too negative even in the best available force field~ \cite{botan15}, thereby not being equal to the order parameter in PE as observed in experiments.
 
 In conclusion, all studied lipid headgroups sample very broad conformational ensembles in the liquid lamellar phase and the sampled dihedral angles are within similar ranges for all headgroup types.
 Since the rotation of dihedral angles to almost any position bears relatively low energy cost, the lipid headgroups are able to adopt a wide range of conformations when interacting with proteins, ions, or other biomolecules.
@@ -387,7 +386,7 @@ that correctly captured the experimentally measured decrease in PC headgroup ord
 The dihedral angle distributions and relative energies
 in figures \ref{HGorderparametersPCvsSURFdihedrals} and \ref{changesWITHsurf} B reveal that the
 addition of positive charge into a membrane 
-decreases the abundance of \textit{trans} states in g$_2$-g$_3$-O$_{g_3}$-P and g$_3$-O$_{g_3}$-P-O$_\alpha$, and \textit{cis} states in O$_{g_3}$-P-O$_\alpha$-C$\alpha$ dihedrals.
+decreases the abundance of \textit{trans} states in g$_2$-g$_3$-O$_{g_3}$-P and g$_3$-O$_{g_3}$-P-O$_\alpha$, and \textit{cis} states in O$_{g_3}$-P-O$_\alpha$-C$_\alpha$ dihedrals.
 The choline region remains essentially unchanged and only minor changes are observed in the other dihedrals even at a surfactant molar fraction of 0.47.
 
 In addition, binding of ions to the membrane may affect the lipid headgroup conformational ensembles under physiological conditions.
