@@ -196,7 +196,7 @@ but it is not clear if the specificity arises from the
 differences in accessible conformations between lipid types or
 from specific intermolecular lipid--protein interactions.
 
-Structures of protein-bound lipids are available in the Protein Data Bank (PDB) \cite{berman00},
+Structures of protein-bound lipids are available in the Protein Data Bank (PDB, \url{http://www.rcsb.org/}) \cite{berman00},
 and crystal structures of lipids have been determined \cite{buldt81,pascher92},
 but their relation to the conformational ensembles in bulk membranes in the liquid lamellar phase remains unclear \cite{marsh13b}.
 The most accurate experimental information on conformational ensembles of lipids
@@ -250,7 +250,7 @@ Best models for the interpretation of lipid headgroup conformational ensembles f
 using quality evaluation measures defined in the NMRlipids project.
 Conformational ensembles of headgroup and glycerol backbone in PE and PG simulations were evaluated using the C--H bond order parameters \cite{botan15}. Interactions between different headgroups were evaluated by monitoring the changes in headgroup order parameters upon mixing the lipids \cite{antila19}. The ion binding affinities and response of lipids to bound charge were evaluated by monitoring the changes in lipid headgroup order parameters \cite{catte16,antila19}.
 
-The differences in headgroup conformation ensembles were analyzed calculating the distributions of six dihedral angles, O$_\alpha$-C$_\alpha$-C$_\beta$-N/C$_\gamma$, P-O$_\alpha$-C$_\alpha$-C$_\beta$, O$_{g3}$-P-O$_\alpha$-C$_\alpha$, g$_3$-O$_{g3}$-P-O$_\alpha$, g$_2$-g$_3$-O$_{g3}$-P, and g$_1$-g$_2$-g$_3$-O$_{g3}$, labeled in Fig. \ref{HGorderParameters} C. Relative energy costs for turning dihedral angles with respect to the most probable value (lowest energy) were estimated from the inverse Boltzmann formula $\Delta E(\theta) = -kT \left[\ln\left[p(\theta)\right]-\ln\left[p(\theta_0)\right] \right]$, where $p(\theta)$ is the dihedral angle distribution and $\theta_0$ is the most probable angle from MD simulation.
+The differences in headgroup conformation ensembles were analyzed calculating the distributions of six dihedral angles, O$_\alpha$-C$_\alpha$-C$_\beta$-N/C$_\gamma$, P-O$_\alpha$-C$_\alpha$-C$_\beta$, O$_{g3}$-P-O$_\alpha$-C$_\alpha$, g$_3$-O$_{g3}$-P-O$_\alpha$, g$_2$-g$_3$-O$_{g3}$-P, and g$_1$-g$_2$-g$_3$-O$_{g3}$, labeled in Fig. \ref{HGorderParameters} C. Relative free energy costs for turning dihedral angles with respect to the most probable value (lowest free energy) were estimated from the inverse Boltzmann formula $\Delta E(\theta) = -kT \left[\ln\left[p(\theta)\right]-\ln\left[p(\theta_0)\right] \right]$, where $p(\theta)$ is the dihedral angle distribution and $\theta_0$ is the most probable angle from MD simulation.
 
 
 %\clearpage
@@ -300,11 +300,10 @@ were handpicked from the results.
    \caption{\label{structures}
      Results from the best simulation model demonstrating the differences in conformational ensembles between different lipids.
      The best simulation model (CHARMM36) was selected from the comparison of ten different force fields based on quality evaluation against experimental $S_{\rm{CH}}$ values in Figs.~\ref{HGorderParametersPE} and~\ref{HGorderParametersPOPG}.
-     %For a detailed comparison of all the XX force-fields used with the $S_{\rm{CH}}$ values measured please read the supplementary information.
      \textbf{A)} Snapshots with overlayed C$_\beta$, C$_\alpha$ and O$_\alpha$ atoms and occurrence of different conformations.
      \textbf{B)} Headgroup and glycerol backbone region order parameters of different lipids.
-     \textbf{C)} Relative energies for individual heavy atom dihedral angles estimated from the inverse Boltzmann formula.
-     Angles corresponding to energies above 8~$k_\mathrm{B}T$ are not shown because they are not observed in simulations.
+     \textbf{C)} Relative free energies for individual heavy atom dihedral angles estimated from the inverse Boltzmann formula.
+     Angles corresponding to free energies above 8~$k_\mathrm{B}T$ are not shown because they are not observed in simulations.
      \textbf{D)} Distributions of P--N/C$_\gamma$ vector angle with respect to membrane normal.
   }
 \end{figure*}
@@ -339,7 +338,7 @@ The most distinct order parameters are observed for PS headgroups, for which the
   \caption{\label{changesWITHsurf}
     \textbf{A)} Modulation of PC headgroup order parameters and P--N vector tilt (angle between the P-N vector and the bilayer normal) upon addition of cationic surfactant (dihexadecyldimethylammonium)
     from CHARMM36 simulations compared with the experimental data \cite{scherer89}.
-    \textbf{B)} Relative energies for individual dihedral angles estimated from inverse Boltzmann distributions of heavy atom dihedral angles
+    \textbf{B)} Relative free energies for individual dihedral angles estimated from inverse Boltzmann distributions of heavy atom dihedral angles
     with different amounts of cationic surfactant from CHARMM36 simulations.
   }
 \end{figure*}
@@ -348,11 +347,11 @@ MD simulations could be used to interpret the lipid conformational ensembles fro
 
 To understand the structural origin of distinct order parameters for the distinct lipids,
 we first calculated the heavy atom dihedral angle distributions from the best performing simulations that reproduced the differences between headgroups~(Fig. \ref{DIHdists}).
-Then, we used the inverse Boltzmann formula to estimate the
+Then, we used the inverse Boltzmann formula to estimate the free
 energy costs for different dihedral angle orientations.
-The results in Fig.~\ref{structures}C suggest that all lipid headgroups are very flexible and
+The results in Fig.~\ref{structures}C suggest that all lipid headgroups are very flexible and free
 energy costs for rotating individual dihedrals to almost any angle is low (below 8~$k_\mathrm{B}T$).
-Only $cis$ states of P-O$_\alpha$-C$_\alpha$-C$_\beta$ and g$_2$-g$_3$-O$_{g_3}$-P have larger relative
+Only $cis$ states of P-O$_\alpha$-C$_\alpha$-C$_\beta$ and g$_2$-g$_3$-O$_{g_3}$-P have larger relative free
 energies and are not observed for any lipids during the simulations.
 
 
@@ -360,17 +359,17 @@ Major differences between headgroups are observed for the last two dihedrals in 
 O$_\alpha$-C$_\alpha$-C$_\beta$-N/C$_\gamma$ and P-O$_\alpha$-C$_\alpha$-C$_\beta$,
 which prefer \textit{gauche$^-$} conformations for PG and \textit{gauche$^+$} for PS,
 whereas PC and PE exhibit symmetric distributions.
-Also, the energy barriers for O$_\alpha$-C$_\alpha$-C$_\beta$-N/C$_\gamma$ dihedral
+Also, the free energy barriers for O$_\alpha$-C$_\alpha$-C$_\beta$-N/C$_\gamma$ dihedral
 rotations between \textit{gauche} and \textit{trans} states are larger for
 PS and PG lipids than for PC and PE lipids. 
 The rest of the dihedrals are similar between different lipids,
-with the exception of PS lipids for which slightly larger energy for \textit{eclipsed anti} conformation
+with the exception of PS lipids for which slightly larger free energy for \textit{eclipsed anti} conformation
 in g$_3$-O$_{{\mathrm g}3}$-P-O$_\alpha$ dihedral was observed.
 Therefore we suggest that the main differences between lipid headgroups leading to distinct order parameters occur in the headgroup end, while in the phosphate region they remain similar in different lipids with the exception of PS. The increased barriers for dihedral rotations may explain the more rigid headgroup structures in PS~\cite{browning80,buldt81}. Furthermore, the angle between headgroup dipole and membrane normal decreases in the order of PG $>$ PE  $>$ PC  $>$ PS (Fig.~\ref{structures}D). However, the differences between PC and PE in P-O$_\alpha$-C$_\alpha$-C$_\beta$ dihedral
 and P--N vector dipole may be artificial as the $\beta$-carbon order parameter in PC is too negative even in the best available force field~ \cite{botan15}, thereby not being equal to the order parameter in PE as observed in experiments.
 
 In conclusion, all studied lipid headgroups sample very broad conformational ensembles in the liquid lamellar phase and the sampled dihedral angles are within similar ranges for all headgroup types.
-Since the rotation of dihedral angles to almost any position bears relatively low energy cost, the lipid headgroups are able to adopt a wide range of conformations when interacting with proteins, ions, or other biomolecules.
+Since the rotation of dihedral angles to almost any position bears relatively low free energy cost, the lipid headgroups are able to adopt a wide range of conformations when interacting with proteins, ions, or other biomolecules.
 Therefore, the structures in lipid crystals \cite{buldt81,pascher92} are not representative of the liquid state, and models aiming to explain NMR data using only a few conformations \cite{seelig77c,davis83,Semchyschyn04,akutsu20} are not sufficient to capture the large conformational space of lipids in the liquid lamellar state.
 However, conformational ensembles of lipids in MD simulation trajectories with accurate force fields that capture the experimental NMR order parameters and can be considered realistic, and thereby used to interpret the experimental data.
 
@@ -383,7 +382,7 @@ To resolve lipid headgroup conformational ensembles in cellular membranes bearin
 we calculated the heavy atom dihedral angle distributions from 
 the subset of simulations %(CHARMM36)
 that correctly captured the experimentally measured decrease in PC headgroup order parameters upon addition of cationic surfactants into a bilayer (figure \ref{changesWITHsurf} A).
-The dihedral angle distributions and relative energies
+The dihedral angle distributions and relative free energies
 in figures \ref{HGorderparametersPCvsSURFdihedrals} and \ref{changesWITHsurf} B reveal that the
 addition of positive charge into a membrane 
 decreases the abundance of \textit{trans} states in g$_2$-g$_3$-O$_{g_3}$-P and g$_3$-O$_{g_3}$-P-O$_\alpha$, and \textit{cis} states in O$_{g_3}$-P-O$_\alpha$-C$_\alpha$ dihedrals.
