@@ -127,7 +127,7 @@ University of Groningen, 9747 AG Groningen, The Netherlands}
 \renewcommand{\thesection}{S\arabic{section}}%
 \renewcommand{\thepage}{S\arabic{page}}%
 
-\title{ Supporting Information:\\Conformational plasticity of phospholipid headgroups in simulations and experiments}
+\title{ Supporting Information:\\Conformational plasticity of lipid headgroups in cellular membranes and protein--lipid complexes}
 
 \begin{document}
 \tableofcontents{}
@@ -423,7 +423,6 @@ for each lipid in the system. The average and
 the standard error of the mean were then calculated over different lipids.
 Code for all atom simulations is available in Ref.~\citenum{MATCHgit} (\texttt{scripts/calcOrderParameters.py}).
 For united atom simulations, we first constructed trajectories including hydrogens with ideal geometry using either \texttt{buildH} program~\cite{buildH} or (\texttt{scratch/opAAUA\_prod.py}) in  Ref.~\citenum{MATCHgit}, and the order parameters were then calculated from these trajectories. This approach has been tested against trajectories with explicit hydrogens and the deviations in order parameters are small \cite{buildHvalidation,piggot17}.\\
-%\todo{BuildH program is now cited with a direct link to the GitHub repo. I think that a release to Zenodo would be nice in the final publication.}\\
 
 
 
@@ -899,17 +898,17 @@ Refs.~\citenum{Lipid17eccPOPCPOPG8020,Lipid17eccPOPCPOPG8020100mMCaCl,Lipid17ecc
 
 \section{Author contributions}
 \noindent
-{\it Am{\'e}lie Bacle} set up, performed and analysed POPC and POPC:POPE (1:1) simulations with the Berger Force Field.
+{\it Am{\'e}lie Bacle} set up, performed and analysed POPC and POPC:POPE (1:1) simulations with the Berger force field.
 %% Please write description of your contribution here
 
 \noindent
 {\it Pavel Buslaev}
 %% Please write description of your contribution here
-performed the analysis of dihedrals and isomers of lipids. Analysed lipid structures from Protein Data Bank. Prepared panels for figures 2 and 4. Participated in discussions.
+contributed to the analysis of dihedrals and isomers of lipids from MD simulations, and to the analysis of lipid structures from the Protein Data Bank. Prepared panels for figures 2 and 4. 
 
 \noindent
 {\it Rebeca Garc{\'i}a Fandi{\~n}o}
-designed and supervised the molecular dynamics simulations carried out by Antonio Pe{\'o}n, and contributed to some discussions.
+designed and supervised the molecular dynamics simulations carried out by Antonio Pe{\'o}n.
 %% Please write description of your contribution here
 
 \noindent
@@ -919,22 +918,22 @@ set up and performed DPPE, POPG and DPPG simulations with the Slipids Force Fiel
 
 \noindent
 {\it Tiago M. Ferreira}
-was responsible for the solid-state NMR experiments/figures and took part in writing the manuscript.
+was responsible for the solid-state NMR experiments. Prepared figures~\ref{HGorderParameters},~\ref{POPEspectra}, and~\ref{POPGspectra}, and took part in writing the manuscript.
 
 \noindent
-{\it Patrick F.J. Fuchs} supervised Paula Mil{\'a}n Rodr{\'i}guez, Am{\'e}lie Bacle and Chris Papadopoulos, created the buildH software, contributed to many discussions.
+{\it Patrick F.J. Fuchs} supervised Paula Mil{\'a}n Rodr{\'i}guez, Am{\'e}lie Bacle and Chris Papadopoulos, created the buildH software and contributed to the calculation of lipid isomers. Provided comments on the manuscript.
 %% Please write description of your contribution here
 
 \noindent
-{\it Ivan Gushchin} supervised Pavel Buslaev and contributed to the analysis of lipid structures in the Protein Data Bank.
+{\it Ivan Gushchin} supervised Pavel Buslaev and contributed to the analysis of lipid structures in the Protein Data Bank. Provided comments on the manuscript.
 %% Please write description of your contribution here
 
 \noindent
-{\it Matti Javanainen} set up and performed simulations using CHARMM36, Slipids, and MacRog lipid models. He contributed to the organization of the manuscript.
+{\it Matti Javanainen} set up and performed simulations using CHARMM36, Slipids, and MacRog lipid models. Provided comments on the manuscript.
 %% Please write description of your contribution here
 
 \noindent
-{\it Anne M. Kiirikki} set up and performed POPC:POPG(1:1) and POPC:POPG(4:1) simulations with CHARMM36 and POPC:POPG(4:1) with Lipid17ecc. She also contributed to the NMRlipids databank.
+{\it Anne M. Kiirikki} developed the preliminary version of the NMRlipids databank, which was used in several analyses. Set up and performed POPC:POPG(1:1) and POPC:POPG(4:1) simulations with CHARMM36 and POPC:POPG(4:1) with Lipid17ecc.
 %% Please write description of your contribution here
 
 \noindent
@@ -944,16 +943,17 @@ Provided comments on the manuscript.
 
 \noindent
 {\it Josef Melcr}
-created the analysis script \texttt{scripts/calcOrderParameters.py}, 
-prepared the Lipid17ecc topology, 
-and contributed to discussions and manuscript preparation.
+%created the analysis script \texttt{scripts/calcOrderParameters.py}, 
+contributed to the preparation of the Lipid17ecc parameters. 
+Provided comments on the manuscript.
 
 \noindent
-{\it Paula Mil{\'a}n Rodr{\'i}guez} set up, performed and analysed POPC and POPC:POPE (1:1) simulations with the MacRog Force Field. She also fixed the initial force field (itp) files prior to the simulations.
+{\it Paula Mil{\'a}n Rodr{\'i}guez} corrected errors in available MacRog force field parameters. Set up, performed and analysed POPC and POPC:POPE (1:1) simulations with the MacRog force field.
 %% Please write description of your contribution here
 
 \noindent
 {\it Markus S. Miettinen}
+made figures~\ref{HGorderParametersPE} and~\ref{HGorderParametersPOPG}. Provided comments on the manuscript.
 %% Please write description of your contribution here
 
 \noindent
@@ -975,11 +975,12 @@ Setup and performed many of the PE simulations including those with Berger, CHAR
 
 \noindent
 {\it {\'A}ngel Pi{\~n}eiro}
-Created the opAAUA\_prod.py code for the calculation of order parameters. Contributed to some discussions. 
+created the opAAUA\_prod.py code for the calculation of order parameters from united atom trajectories.
 %% Please write description of your contribution here
 
 \noindent
 {\it Salla I. Virtanen}
+prepared Lipid17ecc parameters.
 %% Please write description of your contribution here
 
 \bibliography{refs.bib}
