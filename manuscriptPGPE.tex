@@ -116,6 +116,27 @@ University of Groningen, 9747 AG Groningen, The Netherlands}
 
 \begin{document}
 
+\begin{tocentry}
+
+     \includegraphics[height=3.5cm]{../Figs/TOC2.eps}
+%Some journals require a graphical entry for the Table of Contents.
+%This should be laid out ``print ready'' so that the sizing of the
+%text is correct.
+
+%Inside the \texttt{tocentry} environment, the font used is Helvetica
+%8\,pt, as required by \emph{Journal of the American Chemical
+%Society}.
+
+%The surrounding frame is 9\,cm by 3.5\,cm, which is the maximum
+%permitted for  \emph{Journal of the American Chemical Society}
+%graphical table of content entries. The box will not resize if the
+%content is too big: instead it will overflow the edge of the box.
+
+%This box and the associated title will always be printed on a
+%separate page at the end of the document.
+
+\end{tocentry}
+
 
 \begin{abstract}
 % insert abstract here
@@ -150,14 +171,25 @@ University of Groningen, 9747 AG Groningen, The Netherlands}
 
 \section{Introduction}
 
-Chemical compositions of hydrophilic lipid headgroups vary between different
-organelles and organisms, and different lipid types
-regulate protein functions in many different ways \cite{lee03,vanmeer08}.
-Lipids can directly bind to proteins, or indirectly affect protein
-functions by altering membrane properties such as charge or elasticity \cite{lee03,lemmon08}.
-Specific interactions with certain lipid headgroups
-are known to be essential for the function of several proteins \cite{lee11,lemmon08},
-but it is not clear if the specificity arises from the
+Lipid interactions with other biomolecules is gaining interest
+not only in molecular cell biology \cite{harayama18}, but also in
+nanobiotechnology applications, such as design of antibodies \cite{vigant15}
+and carriers for mRNA vaccines \cite{pardi18,schoenmaker21}.
+Interactions of cellular membranes or lipid nanoparticles with other biomolecules,
+such as proteins, drugs or RNA, are regulated by lipid headgroups,
+the outward facing components of lipid bilayers \cite{harayama18,vanmeer08}.
+%Chemical compositions of hydrophilic  vary between different
+%organelles and organisms, and different lipid types
+%regulate protein functions in many different ways \cite{lee03,vanmeer08}.
+%Lipids can directly bind to proteins, or indirectly affect protein
+%functions by altering membrane properties such as charge or elasticity \cite{lee03,lemmon08}.
+Chemical compositions of lipid headgroups vary between different
+organelles and organisms, and specific interactions with certain lipid headgroups
+are known to be essential for the function of several proteins \cite{harayama18,vanmeer08}.
+However, the driving forces for specific interactions between lipids and membrane binding
+substances are not fully understood because conformational ensembles of lipids in
+physiologically relevant liquid state have not been experimentally determined.
+Therefore, it is not clear if the specificity arises from the
 differences in accessible conformations between lipid types or
 from specific intermolecular lipid--protein interactions.
 
@@ -181,14 +213,17 @@ to resolve differences in the conformational ensembles of PC, PE, PG, and PS lip
 Zwitterionic PC are the most common lipids in eukaryotes and PE in bacteria \cite{vanmeer08,sohlenkamp16};
 PE is also the second most abundant glycerophospholipid in eukaryotic cells
 and has been related to various diseases \cite{vance15,calzada16,patel17}.
+PC lipids are also used in mRNA COVID-19 vaccines \cite{schoenmaker21}.
 PS are the most common negatively charged lipids in eukaryotes and PG in bacteria,
 and both are known to affect membrane protein functionality and signaling \cite{lemmon08,leventis10,sohlenkamp16,hariharan18}.
 All the four studied lipid types specifically bind to various proteins \cite{yeagle14};
 we therefore elucidate also the effect of protein binding to headgroup conformations.
-These interactions are crucial, for example, in lipid-mediated signaling \cite{lemmon08} and for the
-design of phoshopolipid-specific antibodies \cite{vigant15}. 
-
-
+%These interactions are crucial, for example, in lipid-mediated signaling \cite{lemmon08} and for the
+%design of phoshopolipid-specific antibodies \cite{vigant15}. 
+The resulting {\it inverse conformational selection model} for lipid-protein binding can be also
+applied to understand interactions between membranes and other biomolecules than proteins, such as drugs, RNA, or viruses.
+On the other hand, the detailed understanding of lipid bilayer interfaces can facilitate the design
+of lipid nanoparticle carriers for mRNA vaccines with less side effects.
 
 
 \section{Results and Discussion}
@@ -401,10 +436,18 @@ We found that also the protein-bound lipids exhibit a wide range of conformation
 differences between different lipid types: The specificity of lipid binding to proteins is not
 regulated by accessible lipid structures, but a single lipid type can adapt to various binding pockets.
 
-Our results pave the way toward understanding lipid-mediated cell signaling and how lipids regulate membrane protein function in general.
-We suggest that the key to understanding selective binding of certain lipid types to proteins is in intermolecular lipid--protein interactions, rather than in conformational restrictions inherent to the lipids. The broad conformational ensembles we see in bulk bilayers suggest that the structures observed in pure lipid crystals occur seldomly in liquid state. Consequently, in protein binding the entropic cost on the lipid may be significant.
-
-Finally, our work has demonstrated the power of open access MD simulation data
+Our results suggest that lipid binding to proteins can be described by the {\it inverse conformational selection model}
+where unbound lipids sample a wide conformational ensemble offering the large selection of conformations
+that can bind to various binding sites in substrates, such as protein, drug, RNA, or virus, that remain conformationally fixed.
+In this model, the binding energy is dominated by
+intermolecular interactions and changes in lipid conformational entropy, while 
+conformational restrictions inherent to the lipids play a minor role.
+%We suggest that the key to understanding selective binding of certain lipid types to proteins is in intermolecular lipid--protein interactions, rather than in conformational restrictions inherent to the lipids. The broad conformational ensembles we see in bulk bilayers suggest that the structures observed in pure lipid crystals occur seldomly in liquid state. Consequently, in protein binding the entropic cost on the lipid may be significant.
+Applications of the proposed model in molecular cell biology include the understanding of lipid-mediated cell signaling
+and functions of lipid regulated membrane proteins in general. 
+In bionanotechnology, our model facilitates, for example,
+the design of phoshopolipid-specific antibodies and lipid nanoparticle carries with minimal sides effects for mRNA vaccines.
+Furthermore, our work has demonstrated the power of open access MD simulation data
 to complement the PDB data in elucidating behavior of complex systems of disordered biomolecules.
 
 \section{Methods}
